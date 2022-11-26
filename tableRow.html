@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    tr:nth-child(even) {
+      background-color: #6d6d6d50;
+    }
+ 
+
+ 
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table id="table" style="width:100% ; ">
+    <tr style="background-color:rgba(0, 0, 0, 0.774) ;color :white">
+      <th>Row</th>
+      <th>UID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>position</th>
+      <th>city</th>
+    </tr>
+    <tbody id="make"></tbody>
+    <!-- Update Button -->
+    <!-- <div class="updateBtn">
+        <button  onclick="editTableDisplay()">Update data</button>
+    </div> -->
+
+    <!-- Edit table -->
+    <div class="editTable">
+      <div>Uid: </div>
+      <div><input type="number" name="uid" id="uid"></div><br>
+      <div>First Name: </div>
+      <div><input type="text" name="fname" id="fname"></div><br>
+      <div>Last Name: </div>
+      <div><input type="text" name="lname" id="lname"></div><br>
+      <div>Position: </div>
+      <div><input type="text" name="position" id="position"></div><br>
+      <div>City: </div>
+      <div><input type="text" name="City" id="city"></div><br>
+      <div id="UIDR">Remove This UID : </div>
+      <div><input type="number" name="uidE" id="uidE"></div>
+      
+      <button onclick="addRow();" class="editRowBtn">Add</button><br><br>
+      <button onclick="editRow();">Edit</button>
+      <button onclick="remove()">Delete</button>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+    <!-- <button id="add" onclick="creat()" >ADD</button> -->
+    <script src="./index.js">
+
+    </script>
+</body>
+
+</html>
